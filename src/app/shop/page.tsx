@@ -1,36 +1,35 @@
 import Image from "next/image";
 import Navbar from "../components/navbar";
-import GreenHeader from "../components/green-header";
-import arrow from "@/images/Vector (13).png";
-import cat1 from "@/images/card-item.png";
-import cat2 from "@/images/card-item (1).png";
-import cat3 from "@/images/card-item (2).png";
-import cat4 from "@/images/card-item (3).png";
-import cat5 from "@/images/card-item (4).png";
-import drop from "@/images/Vector (14).png";
-import frame from "@/images/Frame 31.png";
-import clients from "@/images/desktop-clients-1.png";
-import pic9 from "@/images/product-cover-5 (8).png";
-import pic10 from "@/images/product-cover-5 (9).png";
-import pic11 from "@/images/product-cover-5 (10).png";
-import pic12 from "@/images/product-cover-5 (11).png";
-import pic13 from "@/images/product-cover-5 (12).png";
-import pic14 from "@/images/product-cover-5 (13).png";
-import pic15 from "@/images/product-cover-5 (14).png";
-import pic16 from "@/images/product-cover-5 (15).png";
-import pic17 from "@/images/product-cover-5 (16).png";
-import pic18 from "@/images/product-cover-5 (17).png";
-import pic19 from "@/images/product-cover-5 (18).png";
-import pic20 from "@/images/product-cover-5 (19).png";
-import fb from "@/images/facebook.png";
-import instagram from "@/images/ant-design_instagram-outlined.png";
-import twitter from "@/images/ant-design_twitter-outlined.png"
+// import arrow from "@/images/Vector (13).png";
+// import cat1 from "@/images/card-item.png";
+
+// import cat3 from "@/images/card-item (2).png";
+// import cat4 from "@/images/card-item (3).png";
+// import cat5 from "@/images/card-item (4).png";
+// import drop from "@/images/Vector (14).png";
+// import frame from "@/images/Frame 31.png";
+// import clients from "@/images/desktop-clients-1.png";
+// import pic9 from "@/images/product-cover-5 (8).png";
+// import pic10 from "@/images/product-cover-5 (9).png";
+// import pic11 from "@/images/product-cover-5 (10).png";
+// import pic12 from "@/images/product-cover-5 (11).png";
+// import pic13 from "@/images/product-cover-5 (12).png";
+// import pic14 from "@/images/product-cover-5 (13).png";
+// import pic15 from "@/images/product-cover-5 (14).png";
+// import pic16 from "@/images/product-cover-5 (15).png";
+// import pic17 from "@/images/product-cover-5 (16).png";
+// import pic18 from "@/images/product-cover-5 (17).png";
+// import pic19 from "@/images/product-cover-5 (18).png";
+// import pic20 from "@/images/product-cover-5 (19).png";
+// import fb from "@/images/facebook.png";
+// import instagram from "@/images/ant-design_instagram-outlined.png";
+// import twitter from "@/images/ant-design_twitter-outlined.png"
 
 import CardText from "../components/cards-text";
-export default function () {
+export default function Shop() {
   return (
     <div>
-      <GreenHeader />
+      
       <Navbar />
       {/* Shop Section */}
       <div className="absolute top-[100px] left-1/2 transform -translate-x-1/2 w-full h-[92px] py-[24px] flex flex-col items-center">
@@ -47,7 +46,7 @@ export default function () {
               <div className="font-Montserrat font-bold text-[14px] leading-[24px] text-[#252B42]">
                 Home
               </div>
-              <Image src={arrow} alt="arrow" width={8.26} height={6} />
+              <Image src={"/card.jpeg"} alt="arrow" width={8.26} height={6} />
               <h6 className="font-Montserrat font-bold text-[14px] leading-[24px] text-[#BDBDBD]">
                 Shop
               </h6>
@@ -59,11 +58,11 @@ export default function () {
       <div className="w-[1440px] h-[271px] bg-[#FAFAFA]">
         <div className="w-[1088px] h-[271px] absolute top-[200px] left-[176px] pb-[48px]">
           <div className="w-[1088px] h-[223px] flex gap-[15px]">
-            <Image src={cat1} alt="1" />
-            <Image src={cat2} alt="2" />
-            <Image src={cat3} alt="3" />
-            <Image src={cat4} alt="4" />
-            <Image src={cat5} alt="5" />
+            <Image src={"/"} alt="1" />
+            <Image src={"/"} alt="2" />
+            <Image src={"/"} alt="3" />
+            <Image src={"/"} alt="4" />
+            <Image src={"/"} alt="5" />
           </div>
         </div>
       </div>
@@ -79,7 +78,7 @@ export default function () {
             <h6 className="font-Montserrat font-bold text-[14px] leading-[24px] text-[#737373]">
               Views:
             </h6>
-            <Image src={frame} alt="frame" className="flex justify-center" />
+            <Image src={"/"} alt="frame" className="flex justify-center" />
           </div>
           <div className="w-[252px] px-[1px] flex  gap-[15px]">
             <button className="w-[141px] h-[50px] border border-[#DDDDDD]">
@@ -87,7 +86,7 @@ export default function () {
                 Popularity
               </p>
               <Image
-                src={drop}
+                src={"/"}
                 alt="drop"
                 className="absolute top-[10px] left-[10px]"
               />
@@ -101,7 +100,7 @@ export default function () {
         </div>
       </div>
       {/* clients */}
-      <Image src={clients} alt="clients" className="absolute top-[600px]" />
+      <Image src={"/"} alt="clients" className="absolute top-[600px]" />
          
          {/* footer */}
          <footer className="bg-white absolute top-[800px] left-[100px]">
@@ -112,9 +111,9 @@ export default function () {
                         <h1 className="text-[#252b42] text-2xl font-bold leading-loose tracking-tight">Bandage</h1>
                     </div>
                     <div className="flex gap-6">
-                        <Image src={fb} alt="fb" className="w-6 h-6 " />
-                        <Image src={instagram} alt="fb" className="w-6 h-6 " />
-                        <Image src={twitter} alt="fb" className="w-6 h-6 " />
+                        <Image src={"/"} alt="fb" className="w-6 h-6 " />
+                        <Image src={"/"} alt="fb" className="w-6 h-6 " />
+                        <Image src={"/"} alt="fb" className="w-6 h-6 " />
                     </div>
                 </div>
             </section>
@@ -205,18 +204,18 @@ export default function () {
           <div className="grid grid-cols-1  sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[30px]">
             {/* Product Cards */}
             {[
-              pic9,
-              pic10,
-              pic11,
-              pic12,
-              pic13,
-              pic14,
-              pic15,
-              pic16,
-              pic17,
-              pic18,
-              pic19,
-              pic20,
+              // pic9,
+              // pic10,
+              // pic11,
+              // pic12,
+              // pic13,
+              
+              // pic15,
+              // pic16,
+              // pic17,
+              // pic18,
+              // pic19,
+              // pic20,
             ].map((pic, index) => (
               <div key={index} className="w-[238px]  mx-auto mb-[30px]">
                 <div className="w-full h-full flex flex-col items-center mb-[50px]">

@@ -1,6 +1,6 @@
-"use client";
+ "use client";
 import Image from "next/image";
-import Link from "next/link";  // Import Link from Next.js
+import Link from "next/link"; // Import Link from Next.js
 import user from "@/images/Vector (12).png";
 import search from "@/images/icn settings icn-xs (6).png";
 import cart from "@/images/icn settings icn-xs (7).png";
@@ -15,54 +15,44 @@ export default function Navbar() {
   };
 
   return (
-    <div className="lg:w-[1437px] lg:h-[58px] w-full h-[532px] lg:absolute lg:top-[70px]">
-      <div className="absolute left-[38px] flex items-center gap-[10px]">
-        <h3 className="font-Montserrat font-semibold leading-[32px] text-[24px] sm:hiddden">Bandage</h3>
-      </div>
-
+    <div className="w-full h-[70px] bg-white z-50 relative">
       {/* Desktop Menu */}
-      <div className="w-[1155px] h-[58px] absolute left-[265px] hidden lg:block">
-        <div className="w-[361px] h-[25px] absolute top-[20.5px] flex gap-[15px]">
-          <ul className="font-Montserrat font-semibold text-[14px] text-[#737373] gap-[15px] leading-[24px] flex justify-center">
+      <div className="hidden lg:flex items-center justify-between px-6 py-4 max-w-screen-xl mx-auto">
+        {/* Logo */}
+        <h3 className="font-Montserrat font-semibold text-[24px] text-[#252b42]">Bandage</h3>
+
+        {/* Main Navigation Links */}
+        <div className="flex gap-6">
+          <ul className="flex gap-6 font-Montserrat text-[14px] text-[#737373]">
             <li><Link href="/">Home</Link></li>
-            <li><Link href="/shop">Shop</Link></li>
-            <li><Link href="/about">About</Link></li>
+           {/* <li><Link href="/shop">Shop</Link></li>*/}
+            <li><Link href="/components/about">About</Link></li>
             <li><Link href="/blog">Blog</Link></li>
             <li><Link href="/contact">Contact</Link></li>
             <li><Link href="/pages">Pages</Link></li>
+            <li><Link href="/pages">ProductPage</Link></li>
           </ul>
-        </div>
 
-        {/* Login / Register section */}
-        <div className="w-[324px] h-[54px] absolute top-[2px] left-[832px] flex justify-between items-center">
-          <div className="w-[166px] h-[54px] p-[15px] flex items-center gap-[5px]">
-            <div className="w-[12px] h-[12px] mt-[6px]">
-              <Image src={user} alt="user" width={12} height={12} />
+          {/* Login and Icon Section */}
+          <div className="flex items-center gap-4">
+            <div className="flex items-center gap-2 cursor-pointer">
+              <Image src={user} alt="user" width={16} height={16} />
+              <span className="font-Montserrat text-[14px] text-[#23A6F0]">Login / Register</span>
             </div>
-            <span className="w-[119px] h-[24px] font-Montserrat font-semibold text-[14px] leading-[24px] text-[#23A6F0]">
-              Login / Register
-            </span>
-          </div>
 
-          {/* Icons section */}
-          <ul className="flex gap-[15px] items-center">
-            <li>
-              <Image src={search} alt="search" width={16} height={16} />
-            </li>
-            <li>
-              <Image src={cart} alt="cart" width={16} height={16} />
-            </li>
-            <li>
-              <Image src={mail} alt="mail" width={16} height={16} />
-            </li>
-          </ul>
+            <ul className="flex gap-4 items-center">
+              <li><Image src={search} alt="search" width={16} height={16} /></li>
+              <li><Image src={cart} alt="cart" width={16} height={16} /></li>
+              <li><Image src={mail} alt="mail" width={16} height={16} /></li>
+            </ul>
+          </div>
         </div>
       </div>
 
       {/* Mobile Menu */}
-      <div className="lg:hidden w-full flex items-center justify-between p-4">
+      <div className="lg:hidden flex items-center justify-between p-4 bg-white border-b">
         {/* Logo */}
-        <h3 className="font-Montserrat font-semibold leading-[32px] text-[24px]">Bandage</h3>
+        <h3 className="font-Montserrat font-semibold text-[24px] text-[#252b42]">Bandage</h3>
 
         {/* Hamburger Icon */}
         <div className="cursor-pointer" onClick={toggleMenu}>
@@ -76,9 +66,9 @@ export default function Navbar() {
       <div
         className={`${
           isMenuOpen ? "block" : "hidden"
-        } absolute bottom-0 w-full bg-[#252B42] p-4 flex flex-col items-center gap-4`}
+        } absolute left-0 top-0 w-full bg-[#252B42] p-4 flex flex-col items-center gap-4`}
       >
-        <ul className="font-Montserrat font-semibold text-[14px] text-white leading-[24px] gap-4 flex flex-col items-center">
+        <ul className="font-Montserrat text-white text-[14px] flex flex-col items-center gap-4">
           <li><Link href="/">Home</Link></li>
           <li><Link href="/shop">Shop</Link></li>
           <li><Link href="/about">About</Link></li>

@@ -3,15 +3,15 @@ import couples from "@/images/asian-woman-man-with-winter-clothes 1.png";
 
 export default function Whitediv() {
   return (
-    <div className="w-full h-auto absolute top-[3810px]">
-      <div className="w-full max-w-[1440px] flex flex-col lg:flex-row gap-[30px] px-4 lg:px-0">
+    <div className="w-full h-auto  px-4 lg:px-0">
+      <div className="w-full max-w-[1440px] mx-auto flex flex-col lg:flex-row gap-[30px]">
         {/* Image Section */}
         <div className="relative w-full lg:w-[707px] h-[400px] lg:h-[682px] flex justify-center">
           <Image
             src={couples}
             alt="couple"
-            className="object-contain"
-            style={{ width: "100%", height: "auto" }}
+            className="object-cover w-full h-full"
+            layout="responsive" // Ensure the image scales properly with the container
           />
         </div>
 
@@ -23,7 +23,7 @@ export default function Whitediv() {
           <h2 className="lg:w-[375px] text-[24px] lg:text-[40px] font-Montserrat font-bold leading-[32px] lg:leading-[50px] text-[#252B42]">
             Part of the Neural Universe
           </h2>
-          <h4 className=" lg:w-[375px] text-[16px] lg:text-[20px] font-Montserrat font-normal leading-[24px] lg:leading-[30px] text-[#737373]">
+          <h4 className="lg:w-[375px] text-[16px] lg:text-[20px] font-Montserrat font-normal leading-[24px] lg:leading-[30px] text-[#737373]">
             We know how large objects will act, but things on a small scale.
           </h4>
           <div className="flex flex-wrap justify-center lg:justify-start gap-[10px]">
