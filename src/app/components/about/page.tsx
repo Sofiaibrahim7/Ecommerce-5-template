@@ -156,7 +156,7 @@ const AboutPage = () => {
           </button>
         </div>
         <div className="lg:w-1/2 mt-6 lg:mt-0">
-        <img
+        <Image width={500} height={500}
         src="/background.png"
        alt="Placeholder"
        className="w-full rounded-lg"
@@ -176,11 +176,11 @@ const AboutPage = () => {
 
                        
                      <div className="flex justify-center gap-6 flex-wrap">
-                    <img src="/fa-brands-1.png" alt="Tool 1" className="h-10" />
-                   <img src="/fa-brands-2.png" alt="Tool 2" className="h-10" />
-                   <img src="/fa-brands-3.png" alt="Stripe" className="h-10" />
-                   <img src="/fa-brands-4.png" alt="AWS" className="h-10" />
-                    <img src="/fa-brands-5.png" alt="Company 5" className="h-10" />
+                    <Image width={500} height={500} src="/fa-brands-1.png" alt="Tool 1" className="h-10" />
+                   <Image width={500} height={500} src="/fa-brands-2.png" alt="Tool 2" className="h-10" />
+                   <Image width={500} height={500} src="/fa-brands-3.png" alt="Stripe" className="h-10" />
+                   <Image width={500} height={500} src="/fa-brands-4.png" alt="AWS" className="h-10" />
+                    <Image width={500} height={500} src="/fa-brands-5.png" alt="Company 5" className="h-10" />
        </div>
        </div>
        </section>

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Home() {
     return (
       <div className="font-sans">
@@ -20,28 +22,28 @@ export default function Home() {
           <h1 className="text-3xl font-semibold text-center mb-6">Shop</h1>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
             <div className="bg-gray-200 p-4 rounded shadow">
-              <img
+              <Image width={500} height={500}
                 src="myapp/public/card-cover-5.jpg"
                 alt="Product 1"
                 className="rounded"
               />
             </div>
             <div className="bg-gray-200 p-4 rounded shadow">
-              <img
+              <Image width={500} height={500}
                 src="myapp/public/card-cover-6.jpg"
                 alt="Product 2"
                 className="rounded"
               />
             </div>
             <div className="bg-gray-200 p-4 rounded shadow">
-              <img
+              <Image width={500} height={500}
                 src="myapp/public/card-cover-7.jpg"
                 alt="Product 3"
                 className="rounded"
               />
             </div>
             <div className="bg-gray-200 p-4 rounded shadow">
-              <img
+              <Image width={500} height={500}
                 src="myapp/public/card-cover-7-1.jpg"
                 alt="Product 4"
                 className="rounded"
@@ -53,10 +55,10 @@ export default function Home() {
         {/* Partners Section */}
         <section className="bg-gray-50 py-8">
           <div className="container mx-auto flex justify-between items-center">
-            <img src="/fa-brands-1.png" alt="Shopify" className="h-12" />
-            <img src="/fa-brands-2.png" alt="Lyft" className="h-12" />
-            <img src="/fa-brands-3.png" alt="Stripe" className="h-12" />
-            <img src="/fa-brands-4.png" alt="AWS" className="h-12" />
+            <Image width={500} height={5000} src="/fa-brands-1.png" alt="Shopify" className="h-12" />
+            <Image width={500} height={5000} src="/fa-brands-2.png" alt="Lyft" className="h-12" />
+            <Image width={500} height={5000} src="/fa-brands-3.png" alt="Stripe" className="h-12" />
+            <Image width={500} height={5000} src="/fa-brands-4.png" alt="AWS" className="h-12" />
           </div>
         </section>
   

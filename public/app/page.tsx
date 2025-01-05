@@ -6,9 +6,11 @@ import Navbar from "./components/navbar";
 import ProductCard from "./components/products-card";
 import Whitediv from "./components/white-dic";
 import FeaturedPosts from "./components/F eaturedPosts";
-import About from './components/About';
-import Contact from "./components/Contact";
+// import About from './components/About';
+// import Contact from "./components/Contact";
 import Footer from "./components/footer";
+import AboutPage from "@/app/components/about/page";
+import Contact from "@/app/components/contact/page";
 
 export default function Home(){
   return( 
@@ -21,7 +23,7 @@ export default function Home(){
       <GreenDiv/>
       <Whitediv/>
       <FeaturedPosts/>
-      <About/>
+      <AboutPage/>
       <Contact/>
       <Footer/>
            
