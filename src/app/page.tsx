@@ -4,8 +4,8 @@ import Editors from "./components/editorspick";
 import GreenDiv from "./components/green-div";
 import Navbar from "./components/navbar";
 import ProductCard from "./components/products-card";
-import Whitediv from "./components/white-dic";
-import FeaturedPosts from "./components/F eaturedPosts";
+import Whitediv from "./components/Whitediv";
+import FeaturedPosts from "./components/FeaturedPosts";
 import Footer from "./components/footer";
 
 

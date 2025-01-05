@@ -30,7 +30,7 @@ export default function Navbar() {
             <li><Link href="/blog">Blog</Link></li>
             <li><Link href="/contact">Contact</Link></li>
             <li><Link href="/pages">Pages</Link></li>
-            <li><Link href="/pages">ProductPage</Link></li>
+            <li><Link href="/components/product">Product</Link></li> 
           </ul>
 
           {/* Login and Icon Section */}
