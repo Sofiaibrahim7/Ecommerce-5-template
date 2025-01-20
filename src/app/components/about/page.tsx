@@ -17,7 +17,8 @@ const AboutPage = () => {
           <h1 className="text-xl font-bold text-gray-800">Bandage</h1>
           <nav className="hidden md:flex space-x-6">
             <a href="#" className="text-gray-700 hover:text-blue-600">Home</a>
-            <a href="#" className="text-gray-700 hover:text-blue-600">Product</a>
+            <a href="/components/shop" className="text-gray-700 hover:text-blue-600">Shop</a>
+            <a href="/components/product" className="text-gray-700 hover:text-blue-600">Product</a>
             <a href="/components/pricingcards" className="text-gray-700 hover:text-blue-600">Pricing</a>
             <a href="/components/contact" className="text-gray-700 hover:text-blue-600">Contact</a>
           </nav>
@@ -54,18 +55,25 @@ const AboutPage = () => {
         </div>
       </section>  
       <section className="py-10 px-4">
-    <div className="container mx-auto">
+  <div className="container mx-auto flex flex-col md:flex-row items-start md:items-center justify-between">
+    <div className="md:w-1/2">
       <h4 className="text-red-500 font-medium text-sm mb-2">
         Problems trying
       </h4>
       <h2 className="text-gray-900 text-3xl md:text-4xl font-bold leading-tight">
-        Met minim Mollie non desert Alamo est sit cliquey dolor do met sent.
+        Problems trying to resolve the conflict between the two major realms of Classical physics.
       </h2>
-      <p className="text-gray-500 text-lg leading-relaxed mt-4">
-        Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics.
+    </div>
+    <div className="md:w-1/2 mt-6 md:mt-0">
+      <h4 className="text-gray-700 font-medium text-sm mb-2">
+        Why it matters
+      </h4>
+      <p className="text-gray-500 text-lg leading-relaxed">
+        Met minim Mollie non desert Alamo est sit cliquey dolor do met sent. Newtonian mechanics and its applications remain relevant in understanding fundamental principles of motion.
       </p>
     </div>
-  </section>
+  </div>
+</section>
 
 
       {/* Stats Section */}
@@ -176,66 +184,60 @@ const AboutPage = () => {
 
                        
                      <div className="flex justify-center gap-6 flex-wrap">
-                    <Image width={500} height={500} src="/fa-brands-1.png" alt="Tool 1" className="h-10" />
-                   <Image width={500} height={500} src="/fa-brands-2.png" alt="Tool 2" className="h-10" />
-                   <Image width={500} height={500} src="/fa-brands-3.png" alt="Stripe" className="h-10" />
-                   <Image width={500} height={500} src="/fa-brands-4.png" alt="AWS" className="h-10" />
-                    <Image width={500} height={500} src="/fa-brands-5.png" alt="Company 5" className="h-10" />
+                    <Image width={100} height={100} src="/fa-brands-1.png" alt="Tool 1" className="h-8" />
+                   <Image width={100} height={100} src="/fa-brands-2.png" alt="Tool 2" className="h-8" />
+                   <Image width={100} height={100} src="/fa-brands-3.png" alt="Stripe" className="h-8" />
+                   <Image width={100} height={100} src="/fa-brands-4.png" alt="AWS" className="h-8" />
+                    <Image width={100} height={100} src="/fa-brands-5.png" alt="Company 5" className="h-8" />
        </div>
        </div>
        </section>
       {/* Footer Section */}
-      <footer className="bg-gray-900 text-white py-10">
-        <div className="container mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center md:text-left">
-          {/* Company Info Section */}
-          <div>
-            <h3 className="font-bold text-lg mb-3">Company Info</h3>
-            <ul className="space-y-2 text-gray-400">
-              <li>About Us</li>
-              <li>Careers</li>
-              <li>Blog</li>
-            </ul>
-          </div>
+      <footer className="bg-white text-black py-10">
+                <div className="container mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center md:text-left">
+               <div>
+                    <h3 className="font-bold text-lg mb-3">Company Info</h3>
+                   <ul className="space-y-2 text-black">
+                       <li>About Us</li>
+                       <li>Carrier</li>
+                       <li>We are hiring</li>
+                       <li>Blog</li>
+                         </ul>
+                         </div>
+                     <div>
+                                  <h3 className="font-bold text-lg mb-3">Legal</h3>
+                                 <ul className="space-y-2 text-black">
+                                 <li>Terms of Service</li>
+                                 <li>Privacy Policy</li>
+                                 <li>Cookies</li>
+                                       </ul>
+                                    </div>
 
-          {/* Legal Section */}
-          <div>
-            <h3 className="font-bold text-lg mb-3">Legal</h3>
-            <ul className="space-y-2 text-gray-400">
-              <li>Terms of Service</li>
-              <li>Privacy Policy</li>
-              <li>Cookies</li>
-            </ul>
+                                    <div>
+                      <h3 className="font-bold text-lg mb-3">Features</h3>
+                        <ul className="space-y-2 text-black">
+                               <li>Analytics</li>
+                           <li>Marketing Tools</li>
+                         <li>Integrations</li>
+        </ul>
           </div>
-
-          {/* Features Section */}
           <div>
-            <h3 className="font-bold text-lg mb-3">Features</h3>
-            <ul className="space-y-2 text-gray-400">
-              <li>Analytics</li>
-              <li>Marketing Tools</li>
-              <li>Integrations</li>
-            </ul>
-          </div>
-
-          {/* Get in Touch Section */}
-          <div>
-            <h3 className="font-bold text-lg mb-3">Get in Touch</h3>
-            <button className="mt-2 px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-500 transition duration-300">
-              Contact Us
-            </button>
-          </div>
-        </div>
-
-     
-        {/* Footer Bottom Section */}
-        <div className="border-t border-gray-600 mt-10 pt-6 text-center">
-          <p className="text-gray-500">
-            &copy; 2024 Bandage. All rights reserved. Designed for quality and reliability.
-          </p>
-        </div>
-      </footer>
+          <h3 className="font-bold text-lg mb-3">Get in Touch</h3>
+         <button className="mt-2 px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-500 transition duration-300">
+        Contact Us
+      </button>
     </div>
-  );
-};
+  </div>
+
+  <div className="border-t border-gray-300 mt-10 pt-6 text-center">
+    <p className="text-black">
+      &copy; 2024 Bandage. All rights reserved. Designed for quality and reliability.
+        </p>
+          </div>
+             </footer>
+
+           </div>
+           );
+               };
 
 export default AboutPage;

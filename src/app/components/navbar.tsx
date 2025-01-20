@@ -6,6 +6,7 @@ import search from "@/images/icn settings icn-xs (6).png";
 import cart from "@/images/icn settings icn-xs (7).png";
 import mail from "@/images/icn settings icn-xs (8).png";
 import { useState } from "react"; // Import useState for toggling hamburger menu
+import LoginButton from "./LoginButton";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false); // State for toggling the menu
@@ -37,7 +38,7 @@ export default function Navbar() {
           <div className="flex items-center gap-4">
             <div className="flex items-center gap-2 cursor-pointer">
               <Image src={user} alt="user" width={16} height={16} />
-              <span className="font-Montserrat text-[14px] text-[#23A6F0]">Login / Register</span>
+            <Link href='/LoginButton'> <span className="font-Montserrat text-[14px] text-[#23A6F0]">Login / Register</span></Link>
             </div>
 
             <ul className="flex gap-4 items-center">

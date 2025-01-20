@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Navbar from "../components/navbar";
+//import Shop from "../components/navbar";
 // import arrow from "@/images/Vector (13).png";
 // import cat1 from "@/images/card-item.png";
 
@@ -9,18 +10,18 @@ import Navbar from "../components/navbar";
 // import drop from "@/images/Vector (14).png";
 // import frame from "@/images/Frame 31.png";
 // import clients from "@/images/desktop-clients-1.png";
-// import pic9 from "@/images/product-cover-5 (8).png";
-// import pic10 from "@/images/product-cover-5 (9).png";
-// import pic11 from "@/images/product-cover-5 (10).png";
-// import pic12 from "@/images/product-cover-5 (11).png";
-// import pic13 from "@/images/product-cover-5 (12).png";
-// import pic14 from "@/images/product-cover-5 (13).png";
-// import pic15 from "@/images/product-cover-5 (14).png";
-// import pic16 from "@/images/product-cover-5 (15).png";
-// import pic17 from "@/images/product-cover-5 (16).png";
-// import pic18 from "@/images/product-cover-5 (17).png";
-// import pic19 from "@/images/product-cover-5 (18).png";
-// import pic20 from "@/images/product-cover-5 (19).png";
+import pic9 from "@/images/product-cover-5 (8).png";
+import pic10 from "@/images/product-cover-5 (9).png";
+ import pic11 from "@/images/product-cover-5 (10).png";
+ import pic12 from "@/images/product-cover-5 (11).png";
+ import pic13 from "@/images/product-cover-5 (12).png";
+//import pic14 from "@/images/product-cover-5 (13).png";
+import pic15 from "@/images/product-cover-5 (14).png";
+ import pic16 from "@/images/product-cover-5 (15).png";
+ import pic17 from "@/images/product-cover-5 (16).png";
+ import pic18 from "@/images/product-cover-5 (17).png";
+ import pic19 from "@/images/product-cover-5 (18).png";
+import pic20 from "@/images/product-cover-5 (19).png";
 // import fb from "@/images/facebook.png";
 // import instagram from "@/images/ant-design_instagram-outlined.png";
 // import twitter from "@/images/ant-design_twitter-outlined.png"
@@ -204,18 +205,18 @@ export default function Shop() {
           <div className="grid grid-cols-1  sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[30px]">
             {/* Product Cards */}
             {[
-              // pic9,
-              // pic10,
-              // pic11,
-              // pic12,
-              // pic13,
+               pic9,
+               pic10,
+              pic11,
+              pic12,
+              pic13,
               
-              // pic15,
-              // pic16,
-              // pic17,
-              // pic18,
-              // pic19,
-              // pic20,
+               pic15,
+               pic16,
+              pic17,
+                pic18,
+              pic19,
+              pic20,
             ].map((pic, index) => (
               <div key={index} className="w-[238px]  mx-auto mb-[30px]">
                 <div className="w-full h-full flex flex-col items-center mb-[50px]">

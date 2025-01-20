@@ -13,7 +13,7 @@ export default function Whitediv() {
             className="object-cover w-full h-full"
             layout="responsive" // Ensure the image scales properly with the container
           />
-        </div>
+        </div> 
 
         {/* Text Section */}
         <div className="w-full lg:w-[573px] h-auto flex flex-col gap-[20px] justify-center items-center lg:items-start text-center lg:text-left mt-[20px] lg:mt-0">
