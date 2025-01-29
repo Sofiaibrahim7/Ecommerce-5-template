@@ -26,7 +26,7 @@ export default function Navbar() {
         <div className="flex gap-6">
           <ul className="flex gap-6 font-Montserrat text-[14px] text-[#737373]">
             <li><Link href="/">Home</Link></li>
-           {/* <li><Link href="/shop">Shop</Link></li>*/}
+            <li><Link href="/shop">Shop</Link></li>
             <li><Link href="/components/about">About</Link></li>
             <li><Link href="/blog">Blog</Link></li>
             <li><Link href="/contact">Contact</Link></li>

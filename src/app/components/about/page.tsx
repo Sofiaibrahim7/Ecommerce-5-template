@@ -21,9 +21,11 @@ const AboutPage = () => {
             <a href="/components/product" className="text-gray-700 hover:text-blue-600">Product</a>
             <a href="/components/pricingcards" className="text-gray-700 hover:text-blue-600">Pricing</a>
             <a href="/components/contact" className="text-gray-700 hover:text-blue-600">Contact</a>
+            <a href="/components/blog" className="text-gray-700 hover:text-blue-600">Blog</a>
+            <a href="/components/pages" className="text-gray-700 hover:text-blue-600">Pages</a>
           </nav>
           <div className="flex space-x-4">
-            <a href="#" className="text-gray-700 hover:text-blue-600">Login</a>
+            <a href="/app/components/login" className="text-gray-700 hover:text-blue-600">Login</a>
             <button className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
               Become a member
             </button>

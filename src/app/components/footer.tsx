@@ -17,21 +17,21 @@ export default function Footer() {
           </svg>
 
           <Image
-             src="/images/icn settings icn-xs (4).png"
+             src="/images/facebook (1).png"
              alt="Facebook"
              width={24}
              height={24}
              className="filter-blue"
              />
           <Image
-             src="/images/icn settings icn-xs (2).png"
+             src="/images/Vector.png"
              alt="Instagram"
               width={24}
               height={24}
              className="filter-blue"
             />
           <Image
-             src="/images/icn settings icn-xs (5).png"
+             src="/images/ant-design_twitter-outlined (1).png"
              alt="Twitter"
              width={24}
              height={24}

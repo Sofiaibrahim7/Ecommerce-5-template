@@ -9,9 +9,11 @@ export default function Contact() {
         <h1 className="text-2xl font-bold text-gray-800">Bandage</h1>
         <nav className="flex space-x-6 text-gray-600">
           <a href="#" className="hover:text-gray-800">Home</a>
-          <a href="#" className="hover:text-gray-800">Product</a>
-          <a href="#" className="hover:text-gray-800">Pricing</a>
-          <a href="#" className="hover:text-gray-800">Contact</a>
+          <a href="/components/product" className="hover:text-gray-800">Product</a>
+          <a href="/components/pricing" className="hover:text-gray-800">Pricing</a>
+          <a href="/components/contact" className="hover:text-gray-800">Contact</a>
+          <a href="/components/pages/shop" className="hover:text-gray-800">Shop</a>
+          
         </nav>
         <div className="flex space-x-4">
           <a href="#" className="text-blue-600 hover:underline">Login</a>
